@@ -43,7 +43,6 @@ public class Main {
 
         totalGaji = gajiPokok + uangLembur;
 
-        // Format angka ke dalam format mata uang Rupiah
         Locale localeID = new Locale("id", "ID");
         NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(localeID);
 
@@ -54,7 +53,6 @@ public class Main {
         System.out.println("------------------------------------+");
         System.out.println("Total Gaji  : Rp " + currencyFormat.format(totalGaji));
         System.out.println("=====================================");
-
 
     }
 }
